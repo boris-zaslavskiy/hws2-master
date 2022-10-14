@@ -1,21 +1,44 @@
 .message {
-
+    display: flex;
+    flex-flow: row wrap;
 }
 
 .imageAndText {
 
+    flex-basis: 50%;
+    margin-left: 50px;
+    margin-bottom: 25px;
+    padding-left: 53px;
 }
 
 .imageAndText img {
+height: 50px;
 
 }
 
 .text {
 
+    padding: 15px;
+
+    background: #ebebeb;
+    position: relative;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    margin-left: 50px;
+
 }
 
 .text:after {
-
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 25px;
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-right: 13px solid #ebebeb;
+    border-bottom: 12px solid transparent;
 }
 
 .name {
